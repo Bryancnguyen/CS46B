@@ -1,0 +1,144 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Lab 02 - Bryan Nguyen (Driver) (Scriber) Section #5\
+Part A\
+1. Nothing is removed. The instructor Phone number remains the same.\
+2. 
+\f1\fs22    \cf2 private\cf0  \cf2 static\cf0  \cf2 void\cf0  removeEntry(InOut \cf3 in\cf0 , AddressBook \cf3 book\cf0 )\
+\pard\pardeftab720
+\cf0    \{\
+	   String \cf3 name\cf0  = \cf3 in\cf0 .nextLine(\cf4 "Enter name: "\cf0 );\
+	   String \cf3 key\cf0  = \cf3 in\cf0 .nextLine(\cf4 "Enter key: "\cf0 );\
+	   String \cf3 value\cf0  = \cf3 book\cf0 .remove(\cf3 name\cf0 , \cf3 key\cf0 );\
+	   \cf2 if\cf0  (\cf3 value\cf0  == \cf2 null\cf0 )\
+		   \cf3 in\cf0 .message(\cf4 "No entry"\cf0 );\
+	   \cf2 else\cf0 \
+		   \cf3 in\cf0 .message(\cf4 "Value "\cf0  + \cf3 value\cf0 );\
+3. Nothing happens because we have to remove it from the array :(\
+Part B\
+1. Done\
+Part C\
+1. A list of all the items contained within my home directory\
+2. 
+\f2 \CocoaLigature0 /Users/bryannguyen\
+3. It automatically fills out the directory for me and takes me there.\
+4. The project is located on Desktop\
+5. It brings the last command back into the line ready to use.\
+6. AddressBook.class		InOut.class\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 AddressBookDemo.class		Item.class\
+ArrayListAddressBook.class	WindowInOut.class\
+ConsoleInOut.class\
+Part D\
+1. /Users/bryannguyen/Desktop\
+2. /Users/bryannguyen/Desktop/deptdir.txt -> ./deptdir.txt\
+3. bin		deptdir.txt	src   is shown.\
+It is shown because it made a copy of the file into the lab2 folder.\
+4. cp -v /Users/bryannguyen/Desktop/deptdir.txt ./deptir.original.txt\
+Part E\
+1. javac 1.7.0_67 is shown\
+2. It runs the AddressBookDemo and lets you pick the file to run it on.\
+3. The two keystrokes are the up arrow key and then enter.\
+Part G\
+1. It will ask you about the options of AddressBookDemo inside the console by displaying just the text and not the app\
+2. It ran the AddressBookDemo Class and brought up the App\
+3. It ran the program inside the terminal.\
+Part H.\
+1. \
+2\
+Diaz\
+Phone\
+5\
+2. When I run this program, nothing happens because there is no Diaz in the deptir file.\
+Part I\
+Step 1\
+2 \
+Diaz\
+Phone\
+1\
+Diaz\
+Phone\
+(408) 924-5060\
+2\
+Diaz\
+Phone\
+5\
+Step 2\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Not a valid option:Phone\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Enter name: Enter key: Enter value: Entry added\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Enter name: Enter key: Value: (408) 924-5060\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: \
+Step 3\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Not a valid option:Phone\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Enter name: Enter key: Enter value: Entry added\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: Enter name: Enter key: Value: (408) 924-5060\
+1: Add/Change Entry\
+2: Look Up Entry\
+3: Remove Entry\
+4: Save Directory\
+5: Exit\
+Enter Command: \
+Step 4\
+I used the cat command : cat expected.txt.\
+Step 5\
+Nothing was shown because there are no differences.\
+6.< Enter Command: 1: Add/Change Entry\
+---\
+> Enter Command: Enter name: Enter key: Enter value: Entry added\
+> 1: Add/Change Entry\
+> 2: Look Up Entry\
+> 3: Remove Entry\
+> 4: Save Directory\
+> 5: Exit\
+> Enter Command: Enter name: Enter key: Value: (408) 924-5060\
+> 1: Add/Change Entry\
+There are differences shown because I entered 4.\
+7. ls shows the contents in the directory\
+   pwd shows which directory/path you\'92re in\
+   cp copies the specific file to the directory you\'92re in\
+   cat shows the contents of a specific file.\
+   diff compares the two files that you specify\
+
+\f1 \CocoaLigature1 \
+}

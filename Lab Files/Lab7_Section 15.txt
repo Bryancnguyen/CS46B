@@ -1,0 +1,116 @@
+Lab 07 Bryan Nguyen ( Scribe ) ( Driver ) Section 15
+1. Bryans-MacBook-Pro:lab7 bryannguyen$ git init
+Reinitialized existing Git repository in /Users/bryannguyen/Desktop/workspace/lab7/.git/
+Bryans-MacBook-Pro:lab7 bryannguyen$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/AddressBook.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.classpath
+	.project
+	.settings/
+	bin/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2. Bryans-MacBook-Pro:lab7 bryannguyen$ git add .gitignore src
+Bryans-MacBook-Pro:lab7 bryannguyen$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   src/AddressBook.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.classpath
+	.project
+	.settings/
+	bin/
+
+
+3.Bryans-MacBook-Pro:lab7 bryannguyen$ git commit -a -m "initial checkin".
+[master eaa8633] initial checkin.
+ Committer: Bryan Nguyen <bryannguyen@Bryans-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 deletion(-)
+4.1 file changed, 1 deletion(-)
+Bryans-MacBook-Pro:lab7 bryannguyen$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.classpath
+	.project
+	.settings/
+	bin/
+
+nothing added to commit but untracked files present (use "git add" to track)
+5. Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.classpath
+	.project
+	.settings/
+	bin/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+6. no changes added to commit (use "git add" and/or "git commit -a")
+Bryans-MacBook-Pro:lab7 bryannguyen$ git commit
+On branch master
+Changes not staged for commit:
+	modified:   src/AddressBook.java
+
+Untracked files:
+	.classpath
+	.project
+	.settings/
+	bin/
+
+no changes added to commit
+7.Bryans-MacBook-Pro:lab7 bryannguyen$ git commit -a -m "test"
+[master 032c9c9] test
+ Committer: Bryan Nguyen <bryannguyen@Bryans-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+8. Click on address book.
+9. Click on tree.
+10. Done.
+Part B.
+1. done
+2. done
+3. There’s an arrow pointing into the file. 
+4. Done.
+5. Done.
+6. Right click on local history and choose the oldest version. 
+
+
+
+LINK to REPO https://github.com/Bnguyen17950/food.git
+DONE.

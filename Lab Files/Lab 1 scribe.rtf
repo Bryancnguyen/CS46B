@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+\red127\green159\blue191;\red42\green0\blue255;\red0\green0\blue192;\red63\green95\blue191;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 CS46B Lab 01 (Bryan Nguyen) (Scriber) (Driver)\
+Part A\
+1. Downloaded Eclipse\
+2. Started New Java Project\
+3. Downloaded the code and unzipped it.\
+4. Dragged all files to project folder\
+Part B\
+1. The first error is with in the constructor items.add(new Item(in.nextLine(), in.nextLine(), in.nextLine()))\
+2. Methods getName, getKey, and getValue are not implemented.\
+3. After picking remove, this code is shown:\
+
+\f1\fs22 \cf2 public\cf0  String remove(String \cf3 name\cf0 , String \cf3 key\cf0 ) \{\
+\pard\pardeftab720
+\cf4 // \cf5 TODO\cf4  Auto-generated method stub\cf0 \
+\pard\pardeftab720
+\cf2 return\cf0  \cf2 null\cf0 ;\
+4. The abstract class error message disappeared from the bottom.\
+Part C\
+1. The errors that remain are the constructor issues, getName, getValue, and getKey errors remain.\
+2. They need to be fixed in the ArrayListAddressBook class.\
+3. The errors in the Private Strings went away.\
+Part D\
+1. The same errors are shown.\
+2. I chose Item constructor\
+3. public Item (String , String , String) was generated.\
+Part E\
+1. It threw an error saying there is no main method.\
+2. There is a definition of JFileChooser shown.\
+3. It defines JFi and gives options\
+4. It defines show dialogues.\
+5. Yes I was able to let Eclipse do the typing for me.\
+6. ArrayListAddressBook \cf3 book\cf0  = \cf2 new\cf0  ArrayListAddressBook(); is the code.\
+7. book.load(filename);\
+Part F\
+1. The file runs on the side of the screen and then disappears.\
+2. \cf3 book\cf0 .get(\cf6 "Taylor"\cf0 , \cf6 "Phone"\cf0 );\
+3.  \cf3 book\cf0 .put(\cf6 "Bryan Nguyen"\cf0 , \cf6 "Phone"\cf0 , \cf6 "510-329-2801"\cf0 );\
+    \cf3 book\cf0 .save();\
+4. When I run the code, my name and phone number are placed into the text document.\
+Part G\
+1. Collections cannot be resolved.\
+2. I selected import collections\
+3. The second error I get now is with min.\
+4. The item class needs implement.\
+5. It gives me that Comparable is a raw type and a Type safety error.\
+6. It gives me an error that comparable is a raw type.\
+7.The code is \cf2 public\cf0  \cf2 int\cf0  compareTo(Object \cf3 o\cf0 ) \
+	\{\
+    Item \cf3 other\cf0  = (Item)(\cf3 o\cf0 );\
+    \cf2 if\cf0  (\cf3 other\cf0 .getName().compareTo(getName()) < 0 ) \
+    \{\
+    \cf2 return\cf0  1;\
+    \}\
+    \cf2 else\cf0  \cf2 if\cf0  (\cf3 other\cf0 .getName().compareTo(getName()) > 0)\
+    	\{\
+    		\cf2 return\cf0  -1;\
+    	\}	\
+    	\cf2 else\cf0 	\
+    	\{\
+    	\cf2 return\cf0  \cf7 value\cf0 .compareTo(\cf3 other\cf0 .\cf7 value\cf0 );	\
+        \}\
+	    \}\
+8. The error getFirst is shown\
+9.Item@203e1bc8\
+(408) 924-5085	\
+Part H\
+1. What is odd about is that it doesn\'92t show a name.\
+2. Item class\
+3. The code is 		\
+\cf2 public\cf0  String toString() \
+\{\
+\cf2 return\cf0  \cf7 name\cf0  + \cf6 " "\cf0  + \cf7 key\cf0  + \cf6 " "\cf0  + \cf7 value\cf0 ; \
+\}\
+4. Bryan Nguyen Phone 510-329-2801\
+(408) 924-5085	\
+5. \
+ \cf8 /**\cf0 \
+\pard\pardeftab720
+\cf8     * * returns stuff for T or F\cf0 \
+\cf8     * \cf5 @param\cf8  anItem Name you are searching for\cf0 \
+\cf8     */\
+6. \cf0 false\
+Expected: true\
+false\
+Expected: false\
+7. \
+\
+}

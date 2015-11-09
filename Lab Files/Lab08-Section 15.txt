@@ -1,0 +1,150 @@
+Lab08 Section 15 Bryan Nguyen ( Scriber ) (Driver)
+Part A.
+1. Done.
+2. You can use the Lister Iterator.
+3. import java.util.Arrays;
+import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import java.util.Arrays.*;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+import java.util.logging.StreamHandler;
+
+public class LinkedListTest 
+{
+   private LinkedList sampleList;   
+
+   @BeforeClass
+   public static void start() 
+   {
+      Logger.global.addHandler(new StreamHandler(System.out, new SimpleFormatter()));
+   }
+
+   @Before
+   public void setUp() 
+   {
+      sampleList = new LinkedList();
+      sampleList.addFirst("lamb");
+      sampleList.addFirst("little");
+      sampleList.addFirst("a");
+      sampleList.addFirst("had");
+      sampleList.addFirst("Mary");
+   }
+
+   @Test
+   public void testGet() 
+   {
+      Object result = sampleList.get(3);
+      assertEquals(result, "little");
+      System.out.print(result);
+   }
+}
+
+4. You get an error since your get method isn’t implemented.
+5. public Object get(int i) {
+	Node current = first;
+		  for (int g = 0; g < i; g++) 
+		  { current = current.next;}
+		  return current.data ;// TODO Auto-generated method stub
+6. You print out little and the test case pass.
+7. import java.util.Arrays;
+import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import java.util.Arrays.*;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+import java.util.logging.StreamHandler;
+
+public class LinkedListTest 
+{
+   private LinkedList sampleList;   
+
+   @BeforeClass
+   public static void start() 
+   {
+      Logger.global.addHandler(new StreamHandler(System.out, new SimpleFormatter()));
+   }
+
+   @Before
+   public void setUp() 
+   {
+      sampleList = new LinkedList();
+      sampleList.addFirst("lamb");
+      sampleList.addFirst("little ");
+      sampleList.addFirst("a ");
+      sampleList.addFirst("had ");
+      sampleList.addFirst("Mary ");
+   
+   }
+
+   @Test
+   public void testGet() 
+   {
+      Object result = sampleList.get(3);
+      assertEquals(result, "little ");
+      System.out.print(result);
+   }
+   
+   @Test(expected=IndexOutOfBoundsException.class) public void outOfBounds() {
+       sampleList.get(1);
+    }
+   
+   @Test(expected=IndexOutOfBoundsException.class) public void outOfBounds2() {
+       sampleList.get(sampleList.size() + 1);
+    }
+}
+
+8. Test gives green for passing.
+9. Test keeps giving green.
+10. Changed type of Linked List to String
+11. public Object get(int i) throws IndexOutOfBoundsException{
+	Node current = first;
+		  for (int g = 0; g < i; g++) 
+		  { current = current.next;}
+		  return current.data ;// TODO Auto-generated method stub
+}
+public int size() 
+{
+	int size = 0;
+	Node temp = first;
+	while(temp != null)
+	{	
+	size++;
+	}
+	return size;
+	
+12. You still get passing.
+Part B
+1.       Object result = sampleList.get(3);
+      assertEquals(result, "little ");
+      System.out.print(result);
+      Object test1 = sampleList.get(4);
+      assertEquals(test1, "lamb ");
+      System.out.print(test1);
+      Object test2 = sampleList.get(5);
+      assertEquals(test2, "lazy ");
+      System.out.print(test2);
+2. Done
+3. Change conditional statements.
+4. /*public void add(int n, Object x)
+{
+	Node previous = current;
+	Node newNode = new Node();
+	newNode.data = x;
+	newNode.next = current.next;
+	previous.next =  newNode;
+}
+5. No.
+6. It does not test out of bound errors.
+7. Add a throw out of bounds method.
+8. Nope.
+9. You need to throw exception in order for it to work.
+10. Yes it all passed. 
